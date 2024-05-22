@@ -25,7 +25,10 @@ public class ModBlocks {
             //Can also use Properties.of instead to create new properties.
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
-
+    public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("raw_sapphire_block",
+            //This copies the properties of iron block. Can override with .(fillInProperty like sound).
+            //Can also use Properties.of instead to create new properties.
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
 
 
