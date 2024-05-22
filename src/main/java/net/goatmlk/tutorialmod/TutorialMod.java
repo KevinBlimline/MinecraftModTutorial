@@ -1,6 +1,7 @@
 package net.goatmlk.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.goatmlk.tutorialmod.block.ModBlocks;
 import net.goatmlk.tutorialmod.item.ModCreativeModeTabs;
 import net.goatmlk.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class TutorialMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

@@ -1,6 +1,7 @@
 package net.goatmlk.tutorialmod.item;
 
 import net.goatmlk.tutorialmod.TutorialMod;
+import net.goatmlk.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -23,6 +24,8 @@ public class ModCreativeModeTabs {
 
                         //How to add vanilla items
                         output.accept(Items.DIAMOND);
+
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                     })
                     .build());
 
